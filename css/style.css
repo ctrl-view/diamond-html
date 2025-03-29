@@ -5,25 +5,29 @@ body {
     line-height: 24px;
 }
 
+.half-width {
+    width: 50%;
+}
+
 .container {
-    width: 1433px;
-    padding-left: calc((100% - 1433px) / 2);
-    padding-right: calc((100% - 1433px) / 2);
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px; /* Запас для маленьких экранов */
 }
 
 .header {
     background-color: #030025;
     min-height: 93px;
     display: flex;
+}
+
+.header-items{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-
 }
 
-.half-width {
-    width: 50%;
-}
 
 .header-nav-link {
     text-decoration: none;
@@ -57,12 +61,13 @@ body {
     background-position: center;
     width: 100%;
     min-height: 592px;
-    margin: 39px 0 0;
+    margin: 39px 0 100px 0;
     padding: 238px 0 0;
     box-sizing: border-box;
     position: relative;
     
 }
+
 
 .slider-title {
     display: flex;
@@ -132,7 +137,6 @@ body {
 }
 
 .about {
-    margin: 100px 0 0;
     /* width: 100%; */
     min-height: 438px;
 }
@@ -153,17 +157,27 @@ body {
 }
 
 .about-image {
-    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-image-item {
+    width: 585px;
     height: 348px;
     display: flex;
     border-radius: 16px;
+
 }
 
 .about-content-text {
     margin: 0 0 0 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-content-text-main {
+    
     font-family: inherit;
     font-weight: 500;
     font-size: 24px;
