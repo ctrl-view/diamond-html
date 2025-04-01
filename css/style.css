@@ -1,3 +1,15 @@
+
+:root {
+	--temno-siniy: #030025;
+	--belyyw: #fff;
+	--seryy-podpisatsya: #f1f1f1;
+	--nebesnyy-logo: #a5e9ff;
+	--seryy-tekst: #fbfbfb;
+	--temno-siniy-obvodka: #030025;
+	--btn-slayder: rgba(106, 103, 146, 0.39);
+}
+
+
 body {
     font-family: "Inter";
     font-weight: 200;
@@ -13,19 +25,21 @@ body {
     width: 1280px;
     margin: 0 auto;
     padding: 0 40px; /* Запас для маленьких экранов */
+    box-sizing: border-box;
 }
 
 .header {
-    background-color: #030025;
+    background: var(--temno-siniy);
     min-height: 93px;
     display: flex;
+    min-width: 1280px;
 }
 
 .header-items{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    /* padding: 0 40px; */
 }
 
 
@@ -37,7 +51,7 @@ body {
     line-height: 24px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #FFF;
+    color: var(--belyyw);
 }
 
 
@@ -65,7 +79,7 @@ body {
     padding: 238px 0 0;
     box-sizing: border-box;
     position: relative;
-    
+    min-width: 1280px;
 }
 
 
@@ -79,7 +93,7 @@ body {
     font-weight: 200;
     font-size: 72px;
     line-height: 120px;
-    color: #FFF;
+    color: var(--belyyw);
 }
 
 .slider-buttons {
@@ -139,6 +153,8 @@ body {
 .about {
     /* width: 100%; */
     min-height: 438px;
+    position: relative;
+    margin: 0 auto 129px;
 }
 
 .about-content {
@@ -152,7 +168,7 @@ body {
     font-weight: 200;
     font-size: 48px;
     line-height: 24px;
-    color: #030025;
+    color: var(--temno-siniy);
     margin-bottom: 66px;
 }
 
@@ -176,13 +192,27 @@ body {
     justify-content: center;
 }
 
+.about-hidden-text {
+    z-index: -1;
+    top: 30px;
+    position: absolute;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 173px;
+    line-height: 172px;
+    text-transform: uppercase;
+    color: var(--seryy-tekst);
+    letter-spacing: 0.025em;
+    left: 35px;
+}
+
 .about-content-text-main {
     
     font-family: inherit;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    color: #030025;
+    color: var(--temno-siniy);
     margin: 0 0 15px 0;
 }
 
@@ -191,5 +221,136 @@ body {
     font-weight: 200;
     font-size: 16px;
     line-height: 24px;
-    color: #030025;
+    color: var(--temno-siniy);
+}
+
+
+.jewelry {
+    position: relative;
+}
+
+.jewelry-title {
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 24px;
+    color: var(--temno-siniy);
+    text-align: center;
+    margin: 0 0 67px;
+}
+
+.jewelry-list-container {
+    display: flex;
+}
+
+.jewelry-list-item {
+    display: flex;
+    width: 585px;
+    min-height: 264px;
+}
+
+.jewelry-list-item:nth-of-type(n+2) {
+    margin: 30px 0 0 0;
+}
+
+.jewelry-list-right {
+    margin: 0 0 0 36px;
+}
+
+.jewelry-list-item-img {
+    width: 205px;
+    min-height: 264px;
+    background-size: cover;
+    background-color: var(--temno-siniy);
+    border-radius: 16px 0 0 16px;
+    /* background-position-x: 30%; */
+}
+
+.jewelry-list-item-text {
+    border: 1px solid #030025;
+    border-radius: 0 16px 16px 0;
+    width: 380px;
+    min-height: 264px;
+    padding: 46px 23px 22px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jewelry-list-item-title {
+    margin: 0 10px 0 0;
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 24px;
+    color: var(--temno-siniy);
+}
+
+.jewelry-list-item-about {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--temno-siniy);
+
+}
+
+.jewelry-button {
+    background-color: transparent;
+    border: 0;
+    border-radius: 100%;
+    width: 21px;
+    height: 21px;
+    padding: 0;
+}
+
+.jewelry-hidden-text {
+    z-index: -1;
+    top: 10px;
+    position: absolute;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 173px;
+    line-height:172px;
+    text-transform: uppercase;
+    color: var(--seryy-tekst);
+    letter-spacing: 0.05em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 20px;
+    right: 0;
+    text-align: center;
+}
+
+.jewelry-button-bottom-container {
+    display: flex;
+    justify-content: center;
+    margin: 103px 0 58px 0;
+}
+
+.jewelry-button-bottom {
+    border-radius: 16px;
+    width: 257px;
+    height: 75px;
+    background: var(--temno-siniy);
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--belyyw);
+}
+
+.news-subscription {
+    width: 100%;
+    min-height: 276px;
+    background: var(--seryy-podpisatsya);
+    padding: 75px 0 82px 0;
+    box-sizing: border-box;
+}
+
+.news-subscription-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
 }
