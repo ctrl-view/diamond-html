@@ -7,10 +7,19 @@
 	--seryy-tekst: #fbfbfb;
 	--temno-siniy-obvodka: #030025;
 	--btn-slayder: rgba(106, 103, 146, 0.39);
+    --font-family: "Inter", sans-serif;
 }
 
+Html {
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
 
 body {
+
     font-family: "Inter";
     font-weight: 200;
     font-size: 16px;
@@ -68,20 +77,31 @@ body {
 }
 
 .slider {
+    position: relative;
+    
+
+}
+
+.slider-item {
     background-color: #040032;
     background: radial-gradient(85.53% 66.4% at 61.68% 48.22%, rgba(0, 0, 0, 0.77) 0%, rgba(4, 0, 50, 0.02) 100%), url("../jpg/brooks-leibee-omYSP6oYUs4-unsplash.jpg");
-    padding: 0 40px;
+
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
     min-height: 592px;
-    margin: 39px 0 100px 0;
+    margin: 39px 0 0;
     padding: 238px 0 0;
     box-sizing: border-box;
-    position: relative;
     min-width: 1280px;
+    display: none;
+    opacity: 0;
 }
 
+.active {
+    display: block;
+    opacity: 1;
+}
 
 .slider-title {
     display: flex;
@@ -111,18 +131,28 @@ body {
     align-items: flex-end;
 }
 
+
 .slider-control-item:nth-of-type(n+2) {
     margin: 0 0 0 23px;
 }
 
 .slider-button-item {
     fill: #FFF;
-    background-color: transparent;
+    background-color: white;
     border: 0;
     border-radius: 100%;
     width: 21px;
     height: 21px;
     padding: 0;
+}
+
+.slider-arrow-item-active {
+    background-color: transparent;
+}
+
+.slider-button-item:hover,
+.slider-button-item:focus {
+    background-color: transparent;
 }
 
 .slider-arrows {
@@ -154,7 +184,8 @@ body {
     /* width: 100%; */
     min-height: 438px;
     position: relative;
-    margin: 0 auto 129px;
+    margin: 0 auto;
+    padding: 100px 0 0;
 }
 
 .about-content {
@@ -194,7 +225,7 @@ body {
 
 .about-hidden-text {
     z-index: -1;
-    top: 30px;
+    top: 130px;
     position: absolute;
     font-family: inherit;
     font-weight: 600;
@@ -227,6 +258,7 @@ body {
 
 .jewelry {
     position: relative;
+    padding: 129px 0 0;
 }
 
 .jewelry-title {
@@ -307,7 +339,7 @@ body {
 
 .jewelry-hidden-text {
     z-index: -1;
-    top: 10px;
+    top: 139px;
     position: absolute;
     font-family: var(--font-family);
     font-weight: 600;
@@ -330,6 +362,8 @@ body {
 }
 
 .jewelry-button-bottom {
+    border: 0;
+    padding: 0;
     border-radius: 16px;
     width: 257px;
     height: 75px;
@@ -350,7 +384,390 @@ body {
 }
 
 .news-subscription-items {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;   
 }
+
+.news-subscription-title {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 26px;
+    color: var(--temno-siniy);
+}
+
+.news-subscription-email {
+    margin: 37px 0 0;
+
+}
+
+[placeholder="Ваш адрес"] {
+    left: 470px;
+    position: absolute;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0.50px solid var(--temno-siniy);
+    border-radius: 16px 0 0 16px;
+    width: 260px;
+    min-height: 56px;
+    background: var(--belyyw);
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #a19e9e;
+    padding: 0 0 0 30px;
+    }
+
+.news-subscription-button {
+    right: 470px;
+    position: absolute;
+    border: 0;
+    padding: 0;
+    border-radius: 16px;
+    width: 159px;
+    min-height: 56px;
+    background: var(--temno-siniy);
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--belyyw);
+}
+
+.review {
+    position: relative;
+    padding: 100px 0 206px;
+}
+
+.review-title {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 24px;
+    color: var(--temno-siniy);
+    display: flex;
+    justify-content: center;
+}
+
+.review-hidden-text {
+    top: 130px;
+    z-index: -1;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 173px;
+    line-height: 172px;
+    text-transform: uppercase;
+    color: var(--seryy-tekst);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 20px;
+    right: 0;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.review-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 78px 0 0;
+}
+
+.review-list-item {
+    width: 380px;
+    min-height: 543px;
+}
+
+.review-customer-img {
+    margin: 0 0 30px 0;
+    border-radius: 50%;
+    background-size: cover;
+    width: 380px;
+    min-height: 384px;
+    background-color: #A9A9A9;
+    
+}
+
+.customer-fisrt {
+    background-image: linear-gradient(rgba(3, 0, 37, 0.2), rgba(3, 0, 37, 0.2)), url("../jpg/bruce-mars-8YG31Xn4dSw-unsplash-min.jpg");
+    background-position-x: 70%;
+}
+
+.customer-second {
+    background-image: linear-gradient(rgba(3, 0, 37, 0.2), rgba(3, 0, 37, 0.2)), url("../jpg/bruce-mars-8YG31Xn4dSw-unsplash-min.jpg");
+    background-position-y: 85%;
+    background-size: 120%;
+}
+
+.customer-third {
+    background-image: linear-gradient(rgba(3, 0, 37, 0.2), rgba(3, 0, 37, 0.2)), url("../jpg/tyler-nix-sh3LSNbyj7k-unsplash-min.jpg");
+    background-size: 220%;
+    background-position-x: 52%;
+    background-position-y: 20%;
+}
+
+.review-customer-name {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 24px;
+    color: var(--temno-siniy);
+    display: flex;
+    justify-content: center;
+    margin: 0 0 23px;
+}
+
+.review-customer-text {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--temno-siniy);
+}
+
+[href="tel: +79999992241"] {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--belyyw);
+}
+
+.jewelry-page-search {
+    background-position-y: 45%;
+    margin: 36px 0 0;
+    padding: 56px 0;
+    background-image: linear-gradient(rgba(3, 0, 37, 0.5), rgba(3, 0, 37, 0.5)), url("../jpg/brooks-leibee-JhQCnqsxy3E-unsplash.jpg");
+    min-height: 168px;
+    min-width: 1280px;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.jewerly-page-catalog {
+    border: 1px solid var(--temno-siniy);  
+    border-radius: 8px;
+    width: 175px;
+    height: 56px;
+    background: var(--belyyw);
+    padding: 15px 32px 14px;
+
+}
+
+.jewerly-page-catalog-title {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--temno-siniy);
+    letter-spacing: 0.03em;
+}
+
+.jewelry-page-search-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jewelry-page-search-search {
+    position: relative;
+    border: 1px solid var(--belyyw);
+    border-radius: 8px;
+    width: 440px;
+    height: 56px;
+    background: var(--btn-slayder);
+    margin: 0 73px 0 205px;
+    display: flex;
+
+}
+
+.jewelry-page-search-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    margin: 0 0 0 16px;
+}
+
+.jewelry-page-search-input {
+    padding: 0 0 0 46px;
+    border: 1px solid var(--belyyw);
+    border-radius: 8px;
+    width: 440px;
+    height: 56px;
+    background: var(--btn-slayder);
+    outline: none;
+    border: none;
+}
+
+[placeholder="Поиск"] {
+
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--belyyw);
+}
+
+.jewelry-page-search-input::placeholder { color: white; }
+
+
+
+.jewelry-page-search-create {
+    border: 1px solid var(--temno-siniy);
+    border-radius: 8px;
+    width: 307px;
+    height: 56px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jewelry-page-search-create-title {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--temno-siniy);
+    letter-spacing: 0.05em;
+}
+
+.jewelry-page-main-section {
+    border: 1px solid var(--temno-siniy);
+    border-radius: 8px;
+    padding: 14px 16px;
+    width: 398px;
+    height: 52px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--temno-siniy);
+    }
+
+.jewelry-page-main {
+    padding: 72px 0 112px 0;
+    
+}
+
+.jewelry-page-main-header {
+    display: flex;
+    gap: 24px;
+}
+
+.jewelry-page-main-parametrs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    
+}
+
+.jewelry-page-main-parametrs-item {
+    border: 1px solid var(--temno-siniy);
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--temno-siniy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    height: 52px;
+    box-sizing: border-box;
+}
+
+/* .jewelry-page-jewelry-list {
+
+} */
+
+.jewelry-page-jewelry-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    width: 380px;
+    height: 408px;
+    position: relative;
+}
+
+.jewelry-page-jewelry-list {
+    display: flex;
+    gap: 30px;
+    padding: 40px 0 0;
+    flex-wrap: wrap;
+}
+
+.jewelry-page-jewelry-image {
+    width: 380px;
+    height: 220px;
+    background: url("/jpg/sabrianna-CCpQ12CZ2Pc-unsplash.jpg");
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.jewelry-page-jewelry-price {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 24px;
+
+    /* line-height: 24px; */ 
+    line-height: 24px;
+    color: var(--temno-siniy);
+}
+
+.jewelry-page-jewelry-title {
+    padding: 10px 10px 10px 0px;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--temno-siniy);
+}
+
+.jewelry-page-jewelry-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    font-family: var(--font-family);
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: var(--temno-siniy);
+    width: 265px;
+    height: 72px;
+}
+
+.jewelry-page-like-button {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 24px;
+    top: 16px;
+}
+
+
+

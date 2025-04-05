@@ -29,22 +29,22 @@
             <nav> 
                 <ul class="flex">
                     <li class="header-nav-item">
-                        <a class="header-nav-link" href="#">
+                        <a class="header-nav-link" href="#about">
                             <span> о компании</span>
                         </a>
                     </li>
                     <li class="header-nav-item">
-                        <a class="header-nav-link" href="#">
+                        <a class="header-nav-link" href="./jewelry.html">
                             <span> украшения</span>
                         </a>
                     </li>
                     <li class="header-nav-item">
-                        <a class="header-nav-link" href="#">
+                        <a class="header-nav-link" href="#review">
                             <span> отзывы</span>
                         </a>
                     </li>
                     <li class="header-nav-item">
-                        <a class="header-nav-link" href="#">
+                        <a class="header-nav-link" href="#contacts">
                             <span> контакты</span>
                         </a>
                     </li>
@@ -83,79 +83,92 @@
     </header>
     <main>
         <section class="slider">
-            <div class="slider-items">
-                <div class="slider-title">
-                    <h1 class="slider-title-text"> Ювелирные украшения</h1>
-                </div>
-    
-                <div class="slider-arrows">
-                    <ul class="slider-arrow-list">
-                        <li>
-                            <button type="button" class="slider-arrow-item">
-                                <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <foreignObject x="-4" y="-4" width="81" height="81">
-                                        <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2px);clip-path:url(#bgblur_0_56_103_clip_path);height:100%;width:100%"></div>
-                                    </foreignObject>
-                                    <circle data-figma-bg-blur-radius="4" cx="36.5" cy="36.5" r="36" fill="#6A6792" fill-opacity="0.39" stroke="white" />
-                                    <path d="M28.4772 36.9772L41.2272 29.616L41.2272 44.3385L28.4772 36.9772Z" stroke="white" />
-                                    <defs>
-                                        <clipPath id="bgblur_0_56_103_clip_path" transform="translate(4 4)">
-                                        <circle cx="36.5" cy="36.5" r="36" />
-                                        </clipPath>
-                                    </defs>
+            <ul class="slider-items">
+                <li class="slider-item active">
+                    <div class="slider-title">
+                        <h1 class="slider-title-text"> Ювелирные украшения</h1>
+                    </div>
+                </li>
+                <li class="slider-item"> 
+                    <div class="slider-title">
+                        <h1 class="slider-title-text"> Чето еще </h1>
+                    </div>
+                </li>
+                <li class="slider-item">
+                    <div class="slider-title">
+                        <h1 class="slider-title-text"> И еще тоже что-то</h1>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="slider-arrows">
+                <ul class="slider-arrow-list">
+                    <li>
+                        <button type="button" class="slider-arrow-item prev">
+                            <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <foreignObject x="-4" y="-4" width="81" height="81">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2px);clip-path:url(#bgblur_0_56_103_clip_path);height:100%;width:100%"></div>
+                                </foreignObject>
+                                <circle data-figma-bg-blur-radius="4" cx="36.5" cy="36.5" r="36" fill="#6A6792" fill-opacity="0.39" stroke="white" />
+                                <path d="M28.4772 36.9772L41.2272 29.616L41.2272 44.3385L28.4772 36.9772Z" stroke="white" />
+                                <defs>
+                                    <clipPath id="bgblur_0_56_103_clip_path" transform="translate(4 4)">
+                                    <circle cx="36.5" cy="36.5" r="36" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="slider-arrow-item next">
+                            <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <foreignObject x="-4" y="-4" width="81" height="81">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2px);clip-path:url(#bgblur_0_56_106_clip_path);height:100%;width:100%"></div>
+                                </foreignObject>
+                                <circle data-figma-bg-blur-radius="4" cx="36.5" cy="36.5" r="36" transform="matrix(-1 0 0 1 73 0)" fill="#6A6792" fill-opacity="0.39" stroke="white" />
+                                <path d="M44.5228 36.9772L31.7728 29.616L31.7728 44.3385L44.5228 36.9772Z" stroke="white" />
+                                <defs>
+                                    <clipPath id="bgblur_0_56_106_clip_path" transform="translate(4 4)">
+                                    <circle cx="36.5" cy="36.5" r="36" transform="matrix(-1 0 0 1 73 0)" />
+                                    </clipPath>
+                                </defs>
                                 </svg>
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" class="slider-arrow-item">
-                                <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <foreignObject x="-4" y="-4" width="81" height="81">
-                                        <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2px);clip-path:url(#bgblur_0_56_106_clip_path);height:100%;width:100%"></div>
-                                    </foreignObject>
-                                    <circle data-figma-bg-blur-radius="4" cx="36.5" cy="36.5" r="36" transform="matrix(-1 0 0 1 73 0)" fill="#6A6792" fill-opacity="0.39" stroke="white" />
-                                    <path d="M44.5228 36.9772L31.7728 29.616L31.7728 44.3385L44.5228 36.9772Z" stroke="white" />
-                                    <defs>
-                                        <clipPath id="bgblur_0_56_106_clip_path" transform="translate(4 4)">
-                                        <circle cx="36.5" cy="36.5" r="36" transform="matrix(-1 0 0 1 73 0)" />
-                                        </clipPath>
-                                    </defs>
-                                    </svg>
-                            </button>
-                        </li>
-                    </ul>
-    
-    
-                </div>
-                <div class="slider-buttons">
-                    <ul class="flex">
-                        <li class="slider-control-item">
-                            <button type="button" class="slider-button-item">
-                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 21C16.299 21 21 16.299 21 10.5C21 4.70101 16.299 0 10.5 0C4.70101 0 0 4.70101 0 10.5C0 16.299 4.70101 21 10.5 21ZM10.5 19C15.1944 19 19 15.1944 19 10.5C19 5.80558 15.1944 2 10.5 2C5.80558 2 2 5.80558 2 10.5C2 15.1944 5.80558 19 10.5 19Z" fill="white" />
-                                </svg>
-                            </button>
-                        </li>
-                        <li class="slider-control-item">
-                            <button type="button" class="slider-button-item">
-                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10.5" cy="10.5" r="10.5" fill="white" />
-                                </svg>
-                            </button type="button" class="slider-button-item">
-                        </li>
-                        <li class="slider-control-item">
-                            <button type="button" class="slider-button-item">
-                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10.5" cy="10.5" r="10.5" fill="white" />
-                                </svg>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                        </button>
+                    </li>
+                </ul>
+
+
             </div>
+            <div class="slider-buttons">
+                <ul class="flex">
+                    <li class="slider-control-item">
+                        <button type="button" class="slider-button-item slider-arrow-item-active">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 21C16.299 21 21 16.299 21 10.5C21 4.70101 16.299 0 10.5 0C4.70101 0 0 4.70101 0 10.5C0 16.299 4.70101 21 10.5 21ZM10.5 19C15.1944 19 19 15.1944 19 10.5C19 5.80558 15.1944 2 10.5 2C5.80558 2 2 5.80558 2 10.5C2 15.1944 5.80558 19 10.5 19Z" fill="white" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="slider-control-item">
+                        <button type="button" class="slider-button-item">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 21C16.299 21 21 16.299 21 10.5C21 4.70101 16.299 0 10.5 0C4.70101 0 0 4.70101 0 10.5C0 16.299 4.70101 21 10.5 21ZM10.5 19C15.1944 19 19 15.1944 19 10.5C19 5.80558 15.1944 2 10.5 2C5.80558 2 2 5.80558 2 10.5C2 15.1944 5.80558 19 10.5 19Z" fill="white" />
+                            </svg>
+                        </button type="button" class="slider-button-item">
+                    </li>
+                    <li class="slider-control-item">
+                        <button type="button" class="slider-button-item">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 21C16.299 21 21 16.299 21 10.5C21 4.70101 16.299 0 10.5 0C4.70101 0 0 4.70101 0 10.5C0 16.299 4.70101 21 10.5 21ZM10.5 19C15.1944 19 19 15.1944 19 10.5C19 5.80558 15.1944 2 10.5 2C5.80558 2 2 5.80558 2 10.5C2 15.1944 5.80558 19 10.5 19Z" fill="white" />
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
 
         </section>
 
-        <section class="about container">
+        <section class="about container" id="about">
             <span class="about-hidden-text">О компании</span>
             <h2 class="about-title">
                 О компании
@@ -176,7 +189,7 @@
             </div>
 
         </section>
-        <section  class="jewelry container">
+        <section  class="jewelry container" id="jewelry">
             <span class="jewelry-hidden-text">Украшения</span>
             <h2 class="jewelry-title">
                 Украшения
@@ -215,7 +228,7 @@
 
                     </li>
                     <li class="jewelry-list-item">
-                        <div class="jewelry-list-item-img" style="background-image: url(./jpg/carlos-esteves-1MWbwTaeJIA-unsplash.jpg);background-position-x: 50%;">
+                        <div class="jewelry-list-item-img" style="background-image: url(./jpg/carlos-esteves-1MWbwTaeJIA-unsplash-min.jpg);background-position-x: 50%;">
                             
                         </div>
 
@@ -381,72 +394,105 @@
 
         </section>
         <div class="news-subscription">
-            <div class="news-subscription-items">
-                <span>Подписаться на новости</span>
-                <input type="text">Ваш адрес
-                <button>Подписаться</button>
+            <div class="news-subscription-items container">
+                <span class="news-subscription-title">Подписаться на новости</span>
+                <div class="news-subscription-email">
+                    <input type="email" placeholder="Ваш адрес">
+                    <button class="news-subscription-button">Подписаться</button>
+                </div>
+
             </div>
 
         </div>
-        <section>
-            <ul>
-                <li>
-                    <span>Покупатель 1</span>
-                    <p>
-                        Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста ...
-                    </p>
-                </li>
-                <li>
-                    <span>Покупатель 2</span>
-                    <p>
-                        Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста ...
-                    </p>
-                </li>
-                <li>
-                    <span>Покупатель 3</span>
-                    <p>
-                        Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста ...
-                    </p>
-                </li>
-            </ul>
+        <section class="review" id="review">
+            <div class="container">
+                <span class="review-hidden-text">Отзывы</span>
+                <h2 class="review-title">Отзывы</h2>
+                
+                <ul class="review-list">
+                    <li class="review-list-item">
+                        <div class="review-customer-img customer-fisrt">
+
+                        </div>
+                        <span class="review-customer-name">Покупатель 1</span>
+                        <p class="review-customer-text">
+                            Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста ...
+                        </p>
+                    </li>
+                    <li class="review-list-item">
+                        <div class="review-customer-img customer-second">
+
+                        </div>
+                        <span class="review-customer-name">Покупатель 2</span>
+                        <p class="review-customer-text">
+                            Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста ...
+                        </p>
+                    </li>
+                    <li class="review-list-item">
+                        <div class="review-customer-img customer-third">
+
+                        </div>
+                        <span class="review-customer-name">Покупатель 3</span>
+                        <p class="review-customer-text">
+                            Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста ...
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
         </section>
     </main>
-    <footer>
-        <svg width="170" height="25" viewBox="0 0 170 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.91667 24H0V2.66663H6.375C8.375 2.66663 10.0868 3.09024 11.5104 3.93746C12.934 4.78468 14.0243 5.99996 14.7812 7.58329C15.5451 9.15968 15.9236 11.052 15.9167 13.2604C15.9097 15.5173 15.5139 17.4479 14.7292 19.052C13.9444 20.6493 12.809 21.875 11.3229 22.7291C9.83681 23.5763 8.03472 24 5.91667 24ZM1.30208 22.7916H5.86458C7.76736 22.7916 9.37153 22.4132 10.6771 21.6562C11.9826 20.8923 12.9687 19.7986 13.6354 18.375C14.309 16.9513 14.6424 15.2465 14.6354 13.2604C14.6354 11.302 14.3125 9.62496 13.6667 8.22913C13.0208 6.82635 12.0799 5.74996 10.8438 4.99996C9.61458 4.24996 8.10764 3.87496 6.32292 3.87496H1.30208V22.7916Z" fill="white" />
-            <path d="M28.3128 2.66663V24H27.0107V2.66663H28.3128Z" fill="white" />
-            <path d="M39.6777 24H38.3027L46.0006 2.66663H47.5006L55.1985 24H53.8235L46.8027 4.34371H46.6985L39.6777 24ZM41.6256 15.9687H51.8756V17.177H41.6256V15.9687Z" fill="white" />
-            <path d="M65.191 2.66663H66.6077L74.8265 22.125H74.9723L83.191 2.66663H84.6077V24H83.3577V5.76038H83.2327L75.514 24H74.2848L66.566 5.76038H66.441V24H65.191V2.66663Z" fill="white" />
-            <path d="M141.614 2.66663V24H140.343L126.739 5.03121H126.614V24H125.312V2.66663H126.593L140.197 21.6562H140.322V2.66663H141.614Z" fill="white" />
-            <path d="M159.7 24H153.783V2.66663H160.158C162.158 2.66663 163.87 3.09024 165.294 3.93746C166.717 4.78468 167.808 5.99996 168.565 7.58329C169.329 9.15968 169.707 11.052 169.7 13.2604C169.693 15.5173 169.297 17.4479 168.513 19.052C167.728 20.6493 166.592 21.875 165.106 22.7291C163.62 23.5763 161.818 24 159.7 24ZM155.086 22.7916H159.648C161.551 22.7916 163.155 22.4132 164.461 21.6562C165.766 20.8923 166.752 19.7986 167.419 18.375C168.092 16.9513 168.426 15.2465 168.419 13.2604C168.419 11.302 168.096 9.62496 167.45 8.22913C166.804 6.82635 165.863 5.74996 164.627 4.99996C163.398 4.24996 161.891 3.87496 160.106 3.87496H155.086V22.7916Z" fill="white" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M97.1926 1H111.989L118.182 7.68883L104.591 24L91 7.68883L97.1926 1ZM97.2533 2.25765L99.5587 7.23794H92.6425L97.2533 2.25765ZM92.5694 8.17363H99.9373L103.621 21.4375L92.5694 8.17363ZM105.514 21.4937L116.612 8.17363H108.999L105.514 21.4937ZM108.099 8.17363L104.579 21.6278L100.842 8.17363H108.099ZM109.341 7.23794H116.539L111.91 2.23747L109.341 7.23794ZM111.074 1.93569H105.457L108.686 6.58515L111.074 1.93569ZM108.056 7.23794L104.591 2.24759L101.126 7.23794H108.056ZM100.334 6.81949L103.725 1.93569H98.0728L100.334 6.81949Z" fill="#A5E9FF" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M97.1483 0.899292H112.033L118.315 7.6853L104.591 24.1572L90.8657 7.6853L97.1483 0.899292ZM97.2362 1.10064L91.1336 7.6923L104.591 23.8427L118.048 7.6923L111.945 1.10064H97.2362ZM97.915 1.83498H103.917L100.316 7.02122L97.915 1.83498ZM98.23 2.03633L100.351 6.61768L103.532 2.03633H98.23ZM105.264 1.83498H111.239L108.698 6.78025L105.264 1.83498ZM105.649 2.03633L108.672 6.38998L110.909 2.03633H105.649ZM111.886 2.0635L116.769 7.33858H109.176L111.886 2.0635ZM104.591 2.07104L108.248 7.33858H100.933L104.591 2.07104ZM97.2812 2.07893L99.7159 7.33858H92.4118L97.2812 2.07893ZM111.933 2.41136L109.505 7.13723H116.309L111.933 2.41136ZM92.8726 7.13723H99.4009L97.2248 2.43629L92.8726 7.13723ZM104.591 2.42407L101.318 7.13723H107.863L104.591 2.42407ZM92.3541 8.07293H100.013L103.718 21.4106L103.544 21.5019L92.3541 8.07293ZM92.784 8.27427L103.399 21.0135L99.8604 8.27427H92.784ZM100.709 8.07293H108.229L104.581 22.0144L100.709 8.07293ZM100.974 8.27427L104.575 21.2412L107.968 8.27427H100.974ZM108.921 8.07293H116.827L105.591 21.5581L105.416 21.4681L108.921 8.07293ZM109.076 8.27427L105.725 21.0823L116.397 8.27427H109.076Z" fill="#A5E9FF" />
-        </svg>
-        <ul>
-            <li>
-                <a href="#">
-                    <span> о компании</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span> украшения</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span> отзывы</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span> контакты</span>
-                </a>
-            </li>
-        </ul>
-        <a href="">
-            <span>+7 999 999 22 41</span>
-        </a>
+    <footer id="contacts">
+        <header class="header">
+            <div class="header-items container">
+                <div>
+                    <svg width="170" height="25" viewBox="0 0 170 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.91667 24H0V2.66663H6.375C8.375 2.66663 10.0868 3.09024 11.5104 3.93746C12.934 4.78468 14.0243 5.99996 14.7812 7.58329C15.5451 9.15968 15.9236 11.052 15.9167 13.2604C15.9097 15.5173 15.5139 17.4479 14.7292 19.052C13.9444 20.6493 12.809 21.875 11.3229 22.7291C9.83681 23.5763 8.03472 24 5.91667 24ZM1.30208 22.7916H5.86458C7.76736 22.7916 9.37153 22.4132 10.6771 21.6562C11.9826 20.8923 12.9687 19.7986 13.6354 18.375C14.309 16.9513 14.6424 15.2465 14.6354 13.2604C14.6354 11.302 14.3125 9.62496 13.6667 8.22913C13.0208 6.82635 12.0799 5.74996 10.8438 4.99996C9.61458 4.24996 8.10764 3.87496 6.32292 3.87496H1.30208V22.7916Z" fill="white" />
+                        <path d="M28.3128 2.66663V24H27.0107V2.66663H28.3128Z" fill="white" />
+                        <path d="M39.6777 24H38.3027L46.0006 2.66663H47.5006L55.1985 24H53.8235L46.8027 4.34371H46.6985L39.6777 24ZM41.6256 15.9687H51.8756V17.177H41.6256V15.9687Z" fill="white" />
+                        <path d="M65.191 2.66663H66.6077L74.8265 22.125H74.9723L83.191 2.66663H84.6077V24H83.3577V5.76038H83.2327L75.514 24H74.2848L66.566 5.76038H66.441V24H65.191V2.66663Z" fill="white" />
+                        <path d="M141.614 2.66663V24H140.343L126.739 5.03121H126.614V24H125.312V2.66663H126.593L140.197 21.6562H140.322V2.66663H141.614Z" fill="white" />
+                        <path d="M159.7 24H153.783V2.66663H160.158C162.158 2.66663 163.87 3.09024 165.294 3.93746C166.717 4.78468 167.808 5.99996 168.565 7.58329C169.329 9.15968 169.707 11.052 169.7 13.2604C169.693 15.5173 169.297 17.4479 168.513 19.052C167.728 20.6493 166.592 21.875 165.106 22.7291C163.62 23.5763 161.818 24 159.7 24ZM155.086 22.7916H159.648C161.551 22.7916 163.155 22.4132 164.461 21.6562C165.766 20.8923 166.752 19.7986 167.419 18.375C168.092 16.9513 168.426 15.2465 168.419 13.2604C168.419 11.302 168.096 9.62496 167.45 8.22913C166.804 6.82635 165.863 5.74996 164.627 4.99996C163.398 4.24996 161.891 3.87496 160.106 3.87496H155.086V22.7916Z" fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M97.1926 1H111.989L118.182 7.68883L104.591 24L91 7.68883L97.1926 1ZM97.2533 2.25765L99.5587 7.23794H92.6425L97.2533 2.25765ZM92.5694 8.17363H99.9373L103.621 21.4375L92.5694 8.17363ZM105.514 21.4937L116.612 8.17363H108.999L105.514 21.4937ZM108.099 8.17363L104.579 21.6278L100.842 8.17363H108.099ZM109.341 7.23794H116.539L111.91 2.23747L109.341 7.23794ZM111.074 1.93569H105.457L108.686 6.58515L111.074 1.93569ZM108.056 7.23794L104.591 2.24759L101.126 7.23794H108.056ZM100.334 6.81949L103.725 1.93569H98.0728L100.334 6.81949Z" fill="#A5E9FF" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M97.1483 0.899292H112.033L118.315 7.6853L104.591 24.1572L90.8657 7.6853L97.1483 0.899292ZM97.2362 1.10064L91.1336 7.6923L104.591 23.8427L118.048 7.6923L111.945 1.10064H97.2362ZM97.915 1.83498H103.917L100.316 7.02122L97.915 1.83498ZM98.23 2.03633L100.351 6.61768L103.532 2.03633H98.23ZM105.264 1.83498H111.239L108.698 6.78025L105.264 1.83498ZM105.649 2.03633L108.672 6.38998L110.909 2.03633H105.649ZM111.886 2.0635L116.769 7.33858H109.176L111.886 2.0635ZM104.591 2.07104L108.248 7.33858H100.933L104.591 2.07104ZM97.2812 2.07893L99.7159 7.33858H92.4118L97.2812 2.07893ZM111.933 2.41136L109.505 7.13723H116.309L111.933 2.41136ZM92.8726 7.13723H99.4009L97.2248 2.43629L92.8726 7.13723ZM104.591 2.42407L101.318 7.13723H107.863L104.591 2.42407ZM92.3541 8.07293H100.013L103.718 21.4106L103.544 21.5019L92.3541 8.07293ZM92.784 8.27427L103.399 21.0135L99.8604 8.27427H92.784ZM100.709 8.07293H108.229L104.581 22.0144L100.709 8.07293ZM100.974 8.27427L104.575 21.2412L107.968 8.27427H100.974ZM108.921 8.07293H116.827L105.591 21.5581L105.416 21.4681L108.921 8.07293ZM109.076 8.27427L105.725 21.0823L116.397 8.27427H109.076Z" fill="#A5E9FF" />
+                    </svg>
+                </div>
+                <nav> 
+                    <ul class="flex">
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href="#about">
+                                <span> о компании</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href="#jewelry">
+                                <span> украшения</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href="#review">
+                                <span> отзывы</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href="#contacts">
+                                <span> контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <ul class="flex">
+                        <li class="header-link-icon">
+                            <a href="tel: +79999992241">
+                                +7 999 999 22 41
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
