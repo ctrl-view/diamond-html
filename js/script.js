@@ -32,3 +32,34 @@ document.addEventListener('DOMContentLoaded', () => {
     prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
     nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
     });
+
+    // Попап
+    
+    var createJewelryBtn = document.getElementById('createJewelryBtn');
+    var popupWrp = document.getElementById("popupWrp");
+    var submitSuccess = document.getElementById("submitSuccess");
+    var popupCloseBtn = document.getElementById('popupCloseBtn');
+    var popupSubmitBtn = document.getElementById('popupSubmitBtn');
+    var successBtn = document.getElementById('successBtn')
+    var successCloseBtn = document.getElementById('successCloseBtn')
+
+    createJewelryBtn.addEventListener('click', () => {
+        popupWrp.classList.toggle('popup-close');
+    })
+    
+    popupCloseBtn.addEventListener('click', ()=> {
+        popupWrp.classList.toggle('popup-close');
+    });
+
+    popupSubmitBtn.addEventListener('click', ()=> {
+        submitSuccess.classList.toggle('submit-success-close');
+    })
+    
+    successBtn.addEventListener('click', ()=> {
+        submitSuccess.classList.toggle('submit-success-close');
+        popupWrp.classList.toggle('popup-close');
+    })
+
+    successCloseBtn.addEventListener('click', ()=> {
+        submitSuccess.classList.toggle('submit-success-close');
+    })

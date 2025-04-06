@@ -16,6 +16,8 @@ Html {
 
 button {
     cursor: pointer;
+
+
 }
 
 body {
@@ -553,9 +555,13 @@ body {
     border: 1px solid var(--temno-siniy);  
     border-radius: 8px;
     width: 175px;
-    height: 56px;
+    min-height: 56px;
     background: var(--belyyw);
     padding: 15px 32px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 
 }
 
@@ -566,6 +572,7 @@ body {
     line-height: 24px;
     color: var(--temno-siniy);
     letter-spacing: 0.03em;
+    height: 27px;
 }
 
 .jewelry-page-search-items {
@@ -623,7 +630,7 @@ body {
     border: 1px solid var(--temno-siniy);
     border-radius: 8px;
     width: 307px;
-    height: 56px;
+    min-height: 56px;
     padding: 16px;
     display: flex;
     justify-content: space-between;
@@ -719,8 +726,13 @@ body {
 .jewelry-page-jewelry-image {
     width: 380px;
     height: 220px;
-    background: url("/jpg/sabrianna-CCpQ12CZ2Pc-unsplash.jpg");
     background-size: cover;
+
+}
+
+[alt="jewelry-image"] {
+    width: 100%;
+    height: 100%;
     border-radius: 8px 8px 0 0;
 }
 
@@ -770,4 +782,175 @@ body {
 }
 
 
+.jewelry-cross-button {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
 
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-close {
+    display: none;
+}
+
+.popup-wrp {
+    padding: 72px 82px 30px;
+    width: 1151px;
+    height: 596px;
+    background: var(--belyyw);
+
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.popup-title {
+    font-family: var(--font-family);
+    font-weight: 100;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: center;
+    color: var(--temno-siniy);
+    width: 763px;
+    height: 87px;
+    margin: 0 auto 110px;
+}
+
+.popup-input {
+    border: 1px solid var(--temno-siniy);
+    border-radius: 16px;
+    width: 307px;
+    height: 59px;
+    background: var(--belyyw);
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0 0 0 16px;
+    color: var(--temno-siniy);
+}
+
+.popup-input:nth-of-type(n+2) {
+    margin: 0 0 0 33px;
+}
+
+.popup-agree {
+    margin: 26px auto 38px;
+}
+
+.popup-submit {
+    border-radius: 16px;
+    width: 307px;
+    min-height: 72px;
+    background: var(--temno-siniy);
+    border: none;
+    padding: 0;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--belyyw);
+    margin: 0 auto;
+}
+
+.popup-bottom-text {
+    margin: 24px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 320px;
+    text-align: right;
+}
+
+.popup-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--temno-siniy);
+    cursor: pointer;
+}
+
+.popup-line {
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.popup-close-button {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: none;
+    padding: 0;
+    border-radius: 100%;
+    background-color: transparent;
+    top: -17px;
+    right: -17px;
+}
+/* 
+.popup.submit-success {
+    display: none;
+} */
+
+.submit-message {
+    width: 900px;
+    height: 205px;
+    background: var(--belyyw);
+    padding: 45px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.submit-message-text {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+}
+
+.submit-button {
+    border-radius: 16px;
+    width: 241px;
+    height: 56px;
+    background: var(--temno-siniy);
+    margin: 0 auto;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 17px;
+    text-transform: lowercase;
+    text-align: center;
+    color: var(--belyyw);
+}
+
+.success-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.submit-success-close {
+    display: none;
+}
